@@ -6,14 +6,15 @@ import {
 class CounterSlider extends React.Component {
     state = {
         inputValue: 1,
-    }
+    };
 
     onChange = (value) => {
         this.setState({
             inputValue: value,
         });
-        this.props.handleCountSliderChange(value);
-    }
+
+        this.props.onCountSliderChange(value);
+    };
 
     render() {
         const { inputValue } = this.state;

@@ -12,21 +12,21 @@ class DataViewContainer extends Component {
         minCount: 2,
         chartType: 'hexbin',
         displayTooltip: true,
-    }
+    };
 
     onCountSliderChange = (count) => {
         this.setState({ minCount: count });
-    }
+    };
 
     onChartTypeChange = (e) => {
         console.log(e.target.value);
         this.setState({ chartType: e.target.value });
-    }
+    };
 
     onTooltipChange = (displayTooltip) => {
         console.log(displayTooltip);
         this.setState({ displayTooltip });
-    }
+    };
 
     render() {
         return (
